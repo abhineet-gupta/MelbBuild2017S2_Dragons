@@ -7,12 +7,16 @@ import ContactScreen from './app/pages/ContactListScreen/ContactListScreen';
 import NotFoundScreen from './app/pages/NotFoundScreen/NotFoundScreen';
 import contacts from './app/data/contacts.json';
 import WatchApp from './framework';
+import ElevatorPitchScreen from './app/pages/ElevatorPitchScreen/ElevatorPitch';
+import WellDoneScreen from './app/pages/WellDoneScreen/WellDone';
 
 const pages = [
   { path: '/', Component: HomeScreen },
   { path: '/contacts', Component: ContactScreen, props: { contacts } },
   { path: '/counter', Component: CounterScreen },
   { path: '/notfound', Component: NotFoundScreen },
+  { path: '/elevatorpitch', Component: ElevatorPitchScreen },
+  { path: '/welldone', Component: WellDoneScreen },
 ];
 
 ReactDOM.render(
