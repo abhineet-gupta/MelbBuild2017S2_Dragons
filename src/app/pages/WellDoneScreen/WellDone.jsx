@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './WellDone.css';
 
 const WellDoneScreen = ({ name }) => {
   return (
-    <div><strong>{ name }</strong></div>
+    <div id='message-title'>{ name }</div>
   );
 };
 

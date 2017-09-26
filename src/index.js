@@ -9,6 +9,7 @@ import contacts from './app/data/contacts.json';
 import WatchApp from './framework';
 import ElevatorPitchScreen from './app/pages/ElevatorPitchScreen/ElevatorPitch';
 import WellDoneScreen from './app/pages/WellDoneScreen/WellDone';
+import YourPage from './app/pages/PlaySpace/YourPage';
 
 const pages = [
   { path: '/', Component: HomeScreen },
@@ -17,6 +18,7 @@ const pages = [
   { path: '/notfound', Component: NotFoundScreen },
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
   { path: '/welldone', Component: WellDoneScreen },
+  { path: '/yourpage', Component: YourPage },
 ];
 
 ReactDOM.render(
