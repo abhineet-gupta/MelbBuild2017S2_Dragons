@@ -22,7 +22,7 @@ describe('WelcomeScreen Component', () => {
   });
 
   test('it should have some content', () => {
-    expect(homeScreenComponent.find('#welcome-message')).toBePresent();
+    expect(wrapper.find('#welcome-message')).toBePresent();
   });
 
   test('it should have a RIGHT button config of going to contact page', () => {
@@ -34,7 +34,4 @@ describe('WelcomeScreen Component', () => {
     WelcomeScreenButtons.LEFT();
     expect(ButtonAction.goToPage).toHaveBeenCalledWith('/');
   });
-
-
-
 });
