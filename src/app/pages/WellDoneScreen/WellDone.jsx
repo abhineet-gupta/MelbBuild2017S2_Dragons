@@ -20,9 +20,9 @@ export class WellDoneScreenComponent extends Component {
 
   buttonActions = {
     RIGHT: () => ButtonAction.goToPage('/'),
-    LEFT: () => ButtonAction.goToPage('/contacts'),
-    BOTTOM: () => this.setState({ name: 'Bottom button pressed.' }),
-    TOP: () => this.setState({ name: 'Top button pressed.' }),
+    // LEFT: () => ButtonAction.goToPage('/contacts'),
+    // BOTTOM: () => this.setState({ name: 'Bottom button pressed.' }),
+    // TOP: () => this.setState({ name: 'Top button pressed.' }),
     SCREEN: () => this.setState({ name: 'Well done!' }),
   };
 
