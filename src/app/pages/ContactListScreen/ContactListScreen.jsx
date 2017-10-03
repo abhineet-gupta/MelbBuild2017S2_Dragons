@@ -33,7 +33,7 @@ ContactListScreen.propTypes = {
 };
 
 export const ContactScreenButtons = {
-  LEFT: () => ButtonAction.goToPage('/'),
+  LEFT: () => ButtonAction.goToPage('/welcome'),
   RIGHT: () => ButtonAction.goToPage('/counter'),
   TOP: () => ButtonAction.scrollUp(),
   BOTTOM: () => ButtonAction.scrollDown(),

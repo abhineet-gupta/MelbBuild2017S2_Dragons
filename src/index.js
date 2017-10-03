@@ -11,6 +11,7 @@ import ElevatorPitchScreen from './app/pages/ElevatorPitchScreen/ElevatorPitch';
 import WellDoneScreen from './app/pages/WellDoneScreen/WellDone';
 import YourPage from './app/pages/PlaySpace/YourPage';
 import QuestionScreen from './app/pages/QuestionScreen/QuestionScreen';
+import WelcomeScreen from './app/pages/WelcomeScreen/WelcomeScreen';
 
 const question = {
   question: '1 + 2 = ',
@@ -30,6 +31,7 @@ const pages = [
   { path: '/welldone', Component: WellDoneScreen },
   { path: '/yourpage', Component: YourPage },
   { path: '/question', Component: QuestionScreen, props: { ...question } },
+  { path: '/welcome', Component: WelcomeScreen },
 ];
 
 ReactDOM.render(
