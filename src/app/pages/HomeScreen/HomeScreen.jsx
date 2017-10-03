@@ -47,7 +47,8 @@ export const HomeScreenComponent = () => {
 };
 
 export const HomeScreenButtons = {
-  LEFT: () => ButtonAction.goToPage({ pathname: '/counter', state: { number: 5 } }),
+  // LEFT: () => ButtonAction.goToPage({ pathname: '/counter', state: { number: 5 } }),
+  LEFT: () => ButtonAction.goToPage({ pathname: '/welldone' }),
   RIGHT: () => ButtonAction.goToPage('/contacts'),
   TOP: () => ButtonAction.scrollUp(),
   BOTTOM: () => ButtonAction.scrollDown(),
