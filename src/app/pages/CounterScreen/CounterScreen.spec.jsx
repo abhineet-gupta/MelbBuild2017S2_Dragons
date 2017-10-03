@@ -38,6 +38,11 @@ describe('<CounterScreenComponent />', () => {
     expect(ButtonAction.goToPage).toHaveBeenCalledWith('/');
   });
 
+  it('it should have a LEFT button going to the contacts page', () => {
+    componentWrapper.instance().buttonActions.LEFT();
+    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/contacts');
+  });
+
   it('it should have a SCREEN button config reseting to 0', () => {
     componentWrapper.instance().buttonActions.BOTTOM();
     componentWrapper.instance().buttonActions.BOTTOM();

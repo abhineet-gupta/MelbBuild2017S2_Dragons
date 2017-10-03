@@ -22,6 +22,7 @@ export class CounterScreenComponent extends Component {
     BOTTOM: () => this.setState({ number: this.state.number - 1 }),
     TOP: () => this.setState({ number: this.state.number + 1 }),
     SCREEN: () => this.setState({ number: 0 }),
+    LEFT: () => ButtonAction.goToPage('/contacts'),
   };
 
   render() {

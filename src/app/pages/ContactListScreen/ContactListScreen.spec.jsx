@@ -32,9 +32,9 @@ describe('ContactListScreen component', () => {
     expect(ButtonAction.goToPage).toHaveBeenCalledWith('/welcome');
   });
 
-  it('should have a RIGHT button config of going to Counter page', () => {
+  it('it should have a RIGHT button config of going to Counter Page with an initial number value of 5', () => {
     ContactScreenButtons.RIGHT();
-    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/counter');
+    expect(ButtonAction.goToPage).toHaveBeenCalledWith({ pathname: '/counter', state: { number: 5 } });
   });
 
   it('should have a TOP button config of scrolling up', () => {

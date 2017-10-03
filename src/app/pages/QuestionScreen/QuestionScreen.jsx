@@ -27,7 +27,8 @@ export class QuestionScreenComponent extends Component {
       { pathname: '/confirmation',
         state: { question: this.props.question,
           answer: this.props.answer,
-          userChoice: this.state.userChoice } }),
+          userChoice: this.state.userChoice },
+      }),
   };
 
   render() {
