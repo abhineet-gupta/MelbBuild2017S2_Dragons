@@ -10,6 +10,16 @@ import WatchApp from './framework';
 import ElevatorPitchScreen from './app/pages/ElevatorPitchScreen/ElevatorPitch';
 import WellDoneScreen from './app/pages/WellDoneScreen/WellDone';
 import YourPage from './app/pages/PlaySpace/YourPage';
+import QuestionScreen from './app/pages/QuestionScreen/QuestionScreen';
+
+const question = {
+  question: '1 + 2 = ',
+  top: '1',
+  bottom: '2',
+  left: '3',
+  right: '4',
+  answer: '3',
+};
 
 const pages = [
   { path: '/', Component: HomeScreen },
@@ -19,6 +29,7 @@ const pages = [
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
   { path: '/welldone', Component: WellDoneScreen },
   { path: '/yourpage', Component: YourPage },
+  { path: '/question', Component: QuestionScreen, props: { ...question } },
 ];
 
 ReactDOM.render(
