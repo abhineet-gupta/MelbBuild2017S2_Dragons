@@ -1,40 +1,44 @@
 #topChoice {
-  font-size: 12px;
   position: absolute;
   top: 0;
   left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 #leftChoice {
-  font-size: 12px;
   position: absolute;
   top: 50%;
   left: 0;
+  transform: translate(0%, -50%);
+}
+
+.answer {
+  font-size: 30px;
 }
 
 #question {
   font-size: 30px;
   position: absolute;
-  top: 37%;
-  left: 15%;
-  background: lightblue;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: beige;
   padding: 10px;
   color: black;
 }
 
 #choice {
-  color: white;
+  color: mediumblue;
 }
 
 #rightChoice {
-  font-size: 12px;
   position: absolute;
   top: 50%;
   right: 0;
+  transform: translate(0%, -50%);
 }
 
 #bottomChoice {
-  font-size: 12px;
   position: absolute;
   bottom: 0;
   left: 50% ;

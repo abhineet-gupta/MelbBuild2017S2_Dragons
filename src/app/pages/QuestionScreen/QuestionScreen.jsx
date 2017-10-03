@@ -33,14 +33,14 @@ export class QuestionScreenComponent extends Component {
   render() {
     return (
       <div>
-        <div id='topChoice'>{ this.props.top }</div>
-        <div id='leftChoice'>{ this.props.left }</div>
+        <div className='answer' id='topChoice'>{ this.props.top }</div>
+        <div className='answer' id='leftChoice'>{ this.props.left }</div>
         <div id='question'>
           { this.props.question }
           <span id='choice'>{ this.state.userChoice }</span>
         </div>
-        <div id='rightChoice'>{ this.props.right }</div>
-        <div id='bottomChoice'>{ this.props.bottom }</div>
+        <div className='answer' id='rightChoice'>{ this.props.right }</div>
+        <div className='answer' id='bottomChoice'>{ this.props.bottom }</div>
       </div>
     );
   }
