@@ -8,7 +8,7 @@ import NotFoundScreen from './app/pages/NotFoundScreen/NotFoundScreen';
 import contacts from './app/data/contacts.json';
 import WatchApp from './framework';
 import ElevatorPitchScreen from './app/pages/ElevatorPitchScreen/ElevatorPitch';
-import WellDoneScreen from './app/pages/WellDoneScreen/WellDone';
+import ConfirmationScreen from './app/pages/ConfirmationScreen/ConfirmationScreen';
 import YourPage from './app/pages/PlaySpace/YourPage';
 import QuestionScreen from './app/pages/QuestionScreen/QuestionScreen';
 import WelcomeScreen from './app/pages/WelcomeScreen/WelcomeScreen';
@@ -102,7 +102,7 @@ const pages = [
   { path: '/counter', Component: CounterScreen },
   { path: '/notfound', Component: NotFoundScreen },
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
-  { path: '/welldone', Component: WellDoneScreen },
+  { path: '/confirmation', Component: ConfirmationScreen },
   { path: '/yourpage', Component: YourPage },
   { path: '/question', Component: QuestionScreen, props: { ...question, questions } },
   { path: '/welcome', Component: WelcomeScreen },
