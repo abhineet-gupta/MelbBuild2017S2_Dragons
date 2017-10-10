@@ -2,28 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ButtonAction from '../../../framework/util/ButtonAction';
 import WithButtonConfigs from '../../../framework/containers/WithButtonConfigs';
+import './WelcomeScreen.css';
 
-export const WelcomeScreenComponent = ({ welcome }, { math }) => {
+export const WelcomeScreenComponent = ({ welcome }) => {
   return (
-    <div id='welcome-message'>{ welcome }
-      { math }
+    <div>
+      <h1 className='title'> { welcome } <br /> <br /> </h1>
+      <h2 id='content'>Maths</h2>
     </div>
   );
 };
 
 WelcomeScreenComponent.propTypes = {
-  welcome: PropTypes.string.isRequired,
+  welcome: PropTypes.string,
 };
 
 WelcomeScreenComponent.defaultProps = {
-  welcome: 'Welcome! Below is the list of subjects:',
-  math: 'Math',
+  welcome: 'Welcome!',
 };
 
 
 export const WelcomeScreenButtons = {
   LEFT: () => ButtonAction.goToPage('/'),
   RIGHT: () => ButtonAction.goToPage('/contacts'),
+  SCREEN: () => ButtonAction.goToPage('/'),
 };
 
 export default WithButtonConfigs(WelcomeScreenComponent, WelcomeScreenButtons);

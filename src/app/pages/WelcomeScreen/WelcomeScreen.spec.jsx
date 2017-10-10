@@ -6,7 +6,7 @@ import ButtonAction from '../../../framework/util/ButtonAction';
 jest.mock('../../../framework/util/ButtonAction');
 
 const testProps = {
-  welcome: 'Welcome! Below is the list of subjects:',
+  welcome: 'Welcome!',
   math: 'Math',
 };
 
@@ -22,7 +22,7 @@ describe('WelcomeScreen Component', () => {
   });
 
   test('it should have some content', () => {
-    expect(wrapper.find('#welcome-message')).toBePresent();
+    expect(wrapper.find('#content')).toBePresent();
   });
 
   test('it should have a RIGHT button config of going to contact page', () => {
@@ -32,6 +32,11 @@ describe('WelcomeScreen Component', () => {
 
   test('it should have a LEFT button config of going to home page', () => {
     WelcomeScreenButtons.LEFT();
+    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/');
+  });
+
+  test('it should have a SCREEN button config going to activity screen', () => {
+    WelcomeScreenButtons.SCREEN();
     expect(ButtonAction.goToPage).toHaveBeenCalledWith('/');
   });
 });
