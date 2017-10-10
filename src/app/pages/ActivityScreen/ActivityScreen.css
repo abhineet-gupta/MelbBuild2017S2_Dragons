@@ -1,0 +1,10 @@
+#topic {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: beige;
+  padding: 10px;
+  color: black;
+}

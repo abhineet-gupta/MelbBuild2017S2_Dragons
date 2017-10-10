@@ -12,6 +12,7 @@ import ConfirmationScreen from './app/pages/ConfirmationScreen/ConfirmationScree
 import YourPage from './app/pages/PlaySpace/YourPage';
 import QuestionScreen from './app/pages/QuestionScreen/QuestionScreen';
 import WelcomeScreen from './app/pages/WelcomeScreen/WelcomeScreen';
+import ActivityScreen from './app/pages/ActivityScreen/ActivityScreen';
 
 const question = {
   question: '1 + 2 = ',
@@ -106,6 +107,7 @@ const pages = [
   { path: '/yourpage', Component: YourPage },
   { path: '/question', Component: QuestionScreen, props: { ...question, questions } },
   { path: '/welcome', Component: WelcomeScreen },
+  { path: '/activity', Component: ActivityScreen },
 ];
 
 ReactDOM.render(

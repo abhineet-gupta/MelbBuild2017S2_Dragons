@@ -37,6 +37,6 @@ describe('WelcomeScreen Component', () => {
 
   test('it should have a SCREEN button config going to activity screen', () => {
     WelcomeScreenButtons.SCREEN();
-    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/');
+    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/activity');
   });
 });

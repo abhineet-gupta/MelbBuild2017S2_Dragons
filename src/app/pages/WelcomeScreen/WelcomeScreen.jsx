@@ -25,7 +25,7 @@ WelcomeScreenComponent.defaultProps = {
 export const WelcomeScreenButtons = {
   LEFT: () => ButtonAction.goToPage('/'),
   RIGHT: () => ButtonAction.goToPage('/contacts'),
-  SCREEN: () => ButtonAction.goToPage('/'),
+  SCREEN: () => ButtonAction.goToPage('/activity'),
 };
 
 export default WithButtonConfigs(WelcomeScreenComponent, WelcomeScreenButtons);
