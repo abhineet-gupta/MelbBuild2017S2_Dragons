@@ -15,15 +15,6 @@ import WelcomeScreen from './app/pages/WelcomeScreen/WelcomeScreen';
 import ActivityScreen from './app/pages/ActivityScreen/ActivityScreen';
 import ResultScreen from './app/pages/ResultScreen/ResultScreen';
 
-const question = {
-  question: '1 + 2 = ',
-  top: '1',
-  bottom: '2',
-  left: '3',
-  right: '4',
-  answer: '3',
-};
-
 const questions = [
   {
     question: ' 2 + 2 = ',
@@ -106,7 +97,9 @@ const pages = [
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
   { path: '/confirmation', Component: ConfirmationScreen },
   { path: '/yourpage', Component: YourPage },
-  { path: '/question', Component: QuestionScreen, props: { ...question, questions } },
+  { path: '/question',
+    Component: QuestionScreen,
+    props: { ...questions[Math.floor(Math.random() * questions.length)] } },
   { path: '/welcome', Component: WelcomeScreen },
   { path: '/activity', Component: ActivityScreen },
   { path: '/result', Component: ResultScreen },
