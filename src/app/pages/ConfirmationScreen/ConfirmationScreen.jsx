@@ -7,6 +7,11 @@ import WithButtonConfigs from '../../../framework/containers/WithButtonConfigs';
 export class ConfirmationScreenComponent extends Component {
   constructor(props) {
     super(props);
+    this.state = { name: props.name };
+    this.state = { question: props.question };
+    this.state = { answer: props.answer };
+    this.state = { userChoice: props.userChoice };
+
     const c = this.props.answer === this.props.userChoice ? 1 : 0;
     this.state = { correct: c };
   }
@@ -44,12 +49,14 @@ ConfirmationScreenComponent.propTypes = {
   question: PropTypes.string.isRequired,
   answer: PropTypes.string.isRequired,
   userChoice: PropTypes.string.isRequired,
+  name: PropTypes.string,
 };
 
 ConfirmationScreenComponent.defaultProps = {
   question: '1 + 2 = ',
   answer: '3',
   userChoice: '3',
+  name: 'confirmation',
 };
 
 export default WithButtonConfigs(ConfirmationScreenComponent);

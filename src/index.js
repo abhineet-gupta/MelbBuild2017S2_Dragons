@@ -22,7 +22,7 @@ const pages = [
   { path: '/counter', Component: CounterScreen },
   { path: '/notfound', Component: NotFoundScreen },
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
-  { path: '/confirmation', Component: ConfirmationScreen },
+  { path: '/confirmation', Component: ConfirmationScreen, props: { ...questions } },
   { path: '/yourpage', Component: YourPage },
   { path: '/question',
     Component: QuestionScreen,
