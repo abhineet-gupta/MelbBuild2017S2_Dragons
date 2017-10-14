@@ -123,7 +123,7 @@ export const HomeScreenComponent = () => {
 };
 
 export const HomeScreenButtons = {
-  LEFT: () => ButtonAction.goToPage({/* { pathname: '/counter', state: { number: 5 } } */}),
+  LEFT: () => ButtonAction.goToPage({ pathname: '/counter', state: { number: 5 } }),
   RIGHT: () => ButtonAction.goToPage('/welcome'),
   TOP: () => ButtonAction.scrollUp(),
   BOTTOM: () => ButtonAction.scrollDown(),
