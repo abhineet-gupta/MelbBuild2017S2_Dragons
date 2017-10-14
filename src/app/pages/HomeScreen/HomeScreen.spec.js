@@ -25,11 +25,6 @@ describe('HomeScreenComponent component', () => {
     expect(homeScreenComponent.find('#home-page-content')).toBePresent();
   });
 
-  test('it should have a LEFT button config of going to Counter Page with an initial number value of 5', () => {
-    HomeScreenButtons.LEFT();
-    expect(ButtonAction.goToPage).toHaveBeenCalledWith({ pathname: '/counter', state: { number: 5 } });
-  });
-
   test('it should have a RIGHT button config of going to welcome page', () => {
     HomeScreenButtons.RIGHT();
     expect(ButtonAction.goToPage).toHaveBeenCalledWith('/welcome');
