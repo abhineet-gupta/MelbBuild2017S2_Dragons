@@ -1,0 +1,30 @@
+#title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #92c134;
+}
+
+#content {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -75%);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+img {
+  max-width: 45%;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -5%);
+  width: 100%;
+}
