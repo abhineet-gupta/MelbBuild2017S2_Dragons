@@ -13,6 +13,7 @@ import YourPage from './app/pages/PlaySpace/YourPage';
 import QuestionScreen from './app/pages/QuestionScreen/QuestionScreen';
 import WelcomeScreen from './app/pages/WelcomeScreen/WelcomeScreen';
 import FinalScreen from './app/pages/FinalScreen/FinalScreen';
+import questions from './app/data/questions.json';
 
 const question = {
   question: '1 + 2 = ',
@@ -30,11 +31,11 @@ const pages = [
   { path: '/counter', Component: CounterScreen },
   { path: '/notfound', Component: NotFoundScreen },
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
-  { path: '/confirmation', Component: ConfirmationScreen, props: { ...questions } },
+  { path: '/confirmation', Component: ConfirmationScreen, props: { ...question } },
   { path: '/yourpage', Component: YourPage },
-  { path: '/question', Component: QuestionScreen, props: { ...question } },
-  { path: '/welcome', Component: WelcomeScreen },
+  { path: '/question', Component: QuestionScreen, props: { ...questions } },
   { path: '/final', Component: FinalScreen },
+  { path: '/welcome', Component: WelcomeScreen },
 ];
 
 ReactDOM.render(
