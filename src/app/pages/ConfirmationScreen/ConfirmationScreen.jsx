@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './ConfirmationScreen.css';
 import ButtonAction from '../../../framework/util/ButtonAction';
 import WithButtonConfigs from '../../../framework/containers/WithButtonConfigs';
+import wrongDragon from './wrong-dragon.gif';
 
 export class ConfirmationScreenComponent extends Component {
   constructor(props) {
@@ -37,8 +38,13 @@ export class ConfirmationScreenComponent extends Component {
         <div id='userChoiceAns'>{ this.props.question } { this.props.answer } </div>
         <div id='confirmationResult'>
           { (this.props.answer === this.props.userChoice)
-              ? <div> Well done! </div>
-              : <div> Wrong answer! </div> }
+              ? <div> Well done!
+
+                </div>
+              : <div>
+                Wrong answer! <br />
+                <img id='wrong-dragon' className='animated-gif' src={ wrongDragon } alt='Admonishing Dragon' />
+              </div> }
         </div>
       </div>
     );
