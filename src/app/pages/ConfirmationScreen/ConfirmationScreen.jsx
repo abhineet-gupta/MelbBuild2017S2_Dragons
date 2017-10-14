@@ -30,10 +30,12 @@ export class ConfirmationScreenComponent extends Component {
 
   render() {
     return (
-      <div>
-        <div>Your choice: &ensp; { this.props.question } { this.props.userChoice } </div>
-        <div>Correct answer: { this.props.question } { this.props.answer }</div>
-        <div>
+      <div id="confirmationMain">
+        <div id="userChoice">Your choice:</div>
+        <div id="userChoiceAns">{ this.props.question } { this.props.userChoice } </div>
+        <div id="correctAns">Correct answer:</div>
+        <div id="userChoiceAns">{ this.props.question } { this.props.answer } </div>
+        <div id="confirmationResult">
           { (this.props.answer === this.props.userChoice)
               ? <div> Well done! </div>
               : <div> Wrong answer! </div> }
