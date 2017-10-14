@@ -8,9 +8,9 @@ import WithButtonConfigs from '../../../framework/containers/WithButtonConfigs';
 export const WelcomeScreenComponent = ({ welcome }) => {
   return (
     <div>
-      <h1 id='title'> { welcome }</h1>
-      <img src={ dragonLogo } alt='Team Dragons' />
-      <h2 id='content'>Maths</h2>
+      <h1 id='welcome_title'> { welcome }</h1>
+      <img id='welcome_img' src={ dragonLogo } alt='Team Dragons' />
+      <h2 id='welcome_content'>Maths</h2>
     </div>
   );
 };

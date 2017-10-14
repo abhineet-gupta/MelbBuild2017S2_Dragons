@@ -22,7 +22,7 @@ describe('WelcomeScreen Component', () => {
   });
 
   test('it should have some content', () => {
-    expect(wrapper.find('#content')).toBePresent();
+    expect(wrapper.find('#welcome_content')).toBePresent();
   });
 
   test('it should have a RIGHT button config of going to contact page', () => {

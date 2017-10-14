@@ -1,4 +1,4 @@
-#title {
+#welcome_title {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -9,7 +9,7 @@
   color: #92c134;
 }
 
-#content {
+#welcome_content {
   position: absolute;
   left: 50%;
   top: 75%;
@@ -20,7 +20,7 @@
   color: white;
 }
 
-img {
+#welcome_img {
   max-width: 45%;
   position: absolute;
   left: 50%;
