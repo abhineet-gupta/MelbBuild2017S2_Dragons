@@ -7,7 +7,7 @@ import './result_screen.css';
 export const ResultScreenComponent = ({ total, correct }) => {
   return (
     <div className='result'>
-      {correct}/{total}
+      { correct }/{ total }
     </div>
   );
 };
@@ -17,7 +17,7 @@ export const ResultScreenButtons = {
 };
 
 ResultScreenComponent.propTypes = {
-  total: PropTypes.string.isRequired,
+  total: PropTypes.string,
   correct: PropTypes.string.isRequired,
 };
 

@@ -7,7 +7,7 @@ import './question_screen.css';
 export class QuestionScreenComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { userChoice: '__' };
+    this.state = { userChoice: props.userChoice };
   }
 
   componentDidMount() {
@@ -23,13 +23,20 @@ export class QuestionScreenComponent extends Component {
     LEFT: () => this.setState({ userChoice: this.props.left }),
     BOTTOM: () => this.setState({ userChoice: this.props.bottom }),
     TOP: () => this.setState({ userChoice: this.props.top }),
-    SCREEN: () => ButtonAction.goToPage(
-      { pathname: '/confirmation',
-        state: { question: this.props.question,
-          answer: this.props.answer,
-          userChoice: this.state.userChoice },
-      }),
+    SCREEN: () => this.goToResultsPage(),
   };
+
+  goToResultsPage() {
+    if (this.state.userChoice !== '__') {
+      ButtonAction.goToPage(
+        { pathname: '/confirmation',
+          state: { question: this.props.question,
+            answer: this.props.answer,
+            userChoice: this.state.userChoice },
+        }
+      );
+    }
+  }
 
   render() {
     return (
@@ -55,6 +62,11 @@ QuestionScreenComponent.propTypes = {
   bottom: PropTypes.string.isRequired,
   answer: PropTypes.string.isRequired,
   remapButtons: PropTypes.func.isRequired,
+  userChoice: PropTypes.string,
+};
+
+QuestionScreenComponent.defaultProps = {
+  userChoice: '__',
 };
 
 export default WithButtonConfigs(QuestionScreenComponent);

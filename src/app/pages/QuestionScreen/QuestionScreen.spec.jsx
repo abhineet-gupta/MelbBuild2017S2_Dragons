@@ -81,4 +81,8 @@ describe('QuestionScreen Component', () => {
           userChoice: testProps.right } }
     );
   });
+
+  it('it should SCREEN button config of going nowhere without an answer', () => {
+    wrapper.instance().buttonActions.SCREEN();
+  });
 });

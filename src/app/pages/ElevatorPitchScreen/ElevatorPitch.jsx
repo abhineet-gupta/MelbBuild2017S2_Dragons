@@ -11,4 +11,8 @@ ElevatorPitchScreen.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
+ElevatorPitchScreen.defaultProps = {
+  name: 'Elevator Pitch',
+};
+
 export default ElevatorPitchScreen;

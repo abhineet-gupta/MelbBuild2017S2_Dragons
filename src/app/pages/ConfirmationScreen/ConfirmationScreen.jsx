@@ -24,8 +24,7 @@ export class ConfirmationScreenComponent extends Component {
     RIGHT: () => ButtonAction.goToPage('/'),
     SCREEN: () => ButtonAction.goToPage(
       { pathname: '/result',
-        state: { correct: this.state.correct,
-          total: 1 },
+        state: { correct: this.state.correct },
       }),
   };
 
@@ -33,7 +32,7 @@ export class ConfirmationScreenComponent extends Component {
     return (
       <div>
         <div>Your choice: &ensp; { this.props.question } { this.props.userChoice } </div>
-        <div>Correct answer: { this.props.question } {this.props.answer}</div>
+        <div>Correct answer: { this.props.question } { this.props.answer }</div>
         <div>
           { (this.props.answer === this.props.userChoice)
               ? <div> Well done! </div>
