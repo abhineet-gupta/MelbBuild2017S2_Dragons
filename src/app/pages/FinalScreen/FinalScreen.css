@@ -1,0 +1,35 @@
+.option {
+  font-size: 2em;
+}
+
+.arrow {
+  font-size: 4em;
+}
+
+#leftOption {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+#rightOption {
+  position: absolute;
+  top: 75%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+
+#leftArrow {
+  position: absolute;
+  top: 45%;
+  left: 100;
+  transform: translate(0%, -50%);
+}
+
+#rightArrow {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
