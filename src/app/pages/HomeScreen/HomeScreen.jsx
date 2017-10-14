@@ -16,7 +16,7 @@ export const HomeScreenComponent = () => {
         {/* TODO: Logo to be replaced w/ custom logo */}
         <img src={ logo } alt='logo' />
 
-        <h3 align='center'>The Myth of The Dragon<br />Dragons of Africa<br />**Aido Hwedo**</h3>
+        <h3>The Myth of The Dragon<br />Dragons of Africa<br />**Aido Hwedo**</h3>
 
         <h4>Physical Description</h4>
         <p>Aido Hwedo was a giant python or an enormous python-like serpent

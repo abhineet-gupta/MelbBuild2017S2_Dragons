@@ -25,8 +25,8 @@ describe('ResultScreen Component', () => {
     expect(wrapper.find('ResultScreenComponent').props().total).toBe(testProps.total);
   });
 
-  it('it should have a SCREEN button config going to the home page', () => {
+  it('it should have a SCREEN button config going to the final page', () => {
     ResultScreenButtons.SCREEN();
-    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/');
+    expect(ButtonAction.goToPage).toHaveBeenCalledWith('/final');
   });
 });

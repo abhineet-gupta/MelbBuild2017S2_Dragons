@@ -14,6 +14,8 @@ import QuestionScreen from './app/pages/QuestionScreen/QuestionScreen';
 import WelcomeScreen from './app/pages/WelcomeScreen/WelcomeScreen';
 import FinalScreen from './app/pages/FinalScreen/FinalScreen';
 import questions from './app/data/questions.json';
+import ActivityScreen from './app/pages/ActivityScreen/ActivityScreen';
+import ResultScreen from './app/pages/ResultScreen/ResultScreen';
 
 const question = {
   question: '1 + 2 = ',
@@ -33,9 +35,13 @@ const pages = [
   { path: '/elevatorpitch', Component: ElevatorPitchScreen },
   { path: '/confirmation', Component: ConfirmationScreen, props: { ...question } },
   { path: '/yourpage', Component: YourPage },
-  { path: '/question', Component: QuestionScreen, props: { ...questions } },
+  { path: '/question',
+    Component: QuestionScreen,
+    props: { ...questions[Math.floor(Math.random() * questions.length)] } },
   { path: '/final', Component: FinalScreen },
   { path: '/welcome', Component: WelcomeScreen },
+  { path: '/activity', Component: ActivityScreen },
+  { path: '/result', Component: ResultScreen },
 ];
 
 ReactDOM.render(

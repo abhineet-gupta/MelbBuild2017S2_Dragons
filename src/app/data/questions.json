@@ -40,35 +40,35 @@
     "answer": "3"
   }, {
     "question": " 2 + 2 = ",
-    "right": 3,
-    "left": 4,
-    "top": 5,
-    "bottom": 2,
-    "answer": 4
+    "right": "3",
+    "left": "4",
+    "top": "5",
+    "bottom": "2",
+    "answer": "4"
   },
   {
     "question": "3 + 4 = ",
-    "right": 3,
-    "left": 6,
-    "top": 7,
-    "bottom": 1,
-    "answer": 7
+    "right": "3",
+    "left": "6",
+    "top": "7",
+    "bottom": "1",
+    "answer": "7"
   },
   {
     "question": "1 + 6 = ",
-    "right": 1,
-    "left": 4,
-    "top": 7,
-    "bottom": 9,
-    "answer": 7
+    "right": "1",
+    "left": "4",
+    "top": "7",
+    "bottom": "9",
+    "answer": "7"
   },
   {
     "question": "2 + 3 = ",
-    "right": 5,
-    "left": 4,
-    "top": 6,
-    "bottom": 3,
-    "answer": 5
+    "right": "5",
+    "left": "4",
+    "top": "6",
+    "bottom": "3",
+    "answer": "5"
   },
   {
     "question": "1 + 4 = ",

@@ -6,7 +6,7 @@ import './ActivityScreen.css';
 
 export const ActivityScreenComponent = ({ topic }) => {
   return (
-    <div id='topic'> { topic } </div>
+    <div id='activity_topic'> { topic } </div>
   );
 };
 
@@ -17,7 +17,6 @@ ActivityScreenComponent.propTypes = {
 ActivityScreenComponent.defaultProps = {
   topic: 'Addition',
 };
-
 
 export const ActivityScreenButtons = {
   SCREEN: () => ButtonAction.goToPage('/question'),

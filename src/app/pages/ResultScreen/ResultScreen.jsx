@@ -13,7 +13,7 @@ export const ResultScreenComponent = ({ total, correct }) => {
 };
 
 export const ResultScreenButtons = {
-  SCREEN: () => ButtonAction.goToPage('/'),
+  SCREEN: () => ButtonAction.goToPage('/final'),
 };
 
 ResultScreenComponent.propTypes = {
@@ -22,8 +22,8 @@ ResultScreenComponent.propTypes = {
 };
 
 ResultScreenComponent.defaultProps = {
-  total: 1,
-  correct: 0,
+  total: '1',
+  correct: '0',
 };
 
 
