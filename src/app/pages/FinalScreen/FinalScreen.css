@@ -8,16 +8,22 @@
 
 #leftOption {
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 0;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -30%);
+  color: #92c134;
+  font-weight: bold;
+  font-size: 1.9rem;
 }
 
 #rightOption {
   position: absolute;
-  top: 75%;
+  bottom: 25%;
   right: 0;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -25%);
+  color: #fc491e;
+  font-weight: bold;
+  font-size: 1.9rem;
 }
 
 #leftArrow {
@@ -32,4 +38,5 @@
   top: 55%;
   right: 0;
   transform: translate(0%, -50%);
+  /*transform: rotateX(90);*/
 }

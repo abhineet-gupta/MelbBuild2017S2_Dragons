@@ -7,10 +7,9 @@ import WithButtonConfigs from '../../../framework/containers/WithButtonConfigs';
 export const FinalScreenComponent = () => {
   return (
     <div>
-      <div className='option' id='leftOption'> Do It Again </div>
-      <div className='arrow' id='leftArrow'> &larr; </div>
-      <div className='arrow' id='rightArrow'> &rarr; </div>
-      <div className='option' id='rightOption'> Return Home </div>
+      <div className='option' id='leftOption'> &lt; Do It Again </div>
+
+      <div className='option' id='rightOption'> Return Home &gt;</div>
     </div>
   );
 };
