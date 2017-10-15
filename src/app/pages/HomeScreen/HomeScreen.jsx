@@ -3,8 +3,9 @@ import Date from '../../../framework/components/Date/Date';
 import Time from '../../../framework/components/Time/Time';
 import ButtonAction from '../../../framework/util/ButtonAction';
 import WithButtonConfigs from '../../../framework/containers/WithButtonConfigs';
+import './HomeScreen.css';
 
-import logo from './logo.png';
+import dragonSpinner from './dragon-spinner.gif';
 
 
 export const HomeScreenComponent = () => {
@@ -13,9 +14,10 @@ export const HomeScreenComponent = () => {
       <Date />
       <Time />
       <div id='home-page-content'>
-        {/* TODO: Logo to be replaced w/ custom logo */}
-        <img src={ logo } alt='logo' />
-
+        <img id='dragon_img' src={ dragonSpinner } alt='dragon-spinner' />
+        <br />
+        <br />
+        <br />
         <h3>The Myth of The Dragon<br />Dragons of Africa<br />**Aido Hwedo**</h3>
 
         <h4>Physical Description</h4>
@@ -123,7 +125,7 @@ export const HomeScreenComponent = () => {
 };
 
 export const HomeScreenButtons = {
-  LEFT: () => {},
+  LEFT: () => ButtonAction.goToPage({ pathname: '/counter', state: { number: 0 } }),
   RIGHT: () => ButtonAction.goToPage('/welcome'),
   TOP: () => ButtonAction.scrollUp(),
   BOTTOM: () => ButtonAction.scrollDown(),

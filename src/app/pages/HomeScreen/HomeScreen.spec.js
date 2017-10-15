@@ -21,6 +21,10 @@ describe('HomeScreenComponent component', () => {
     expect(homeScreenComponent).toContainReact(<Date />);
   });
 
+  test('it should have an image of a dragon', () => {
+    expect(homeScreenComponent.find('#dragon_img')).toBePresent();
+  });
+
   test('it should have some content', () => {
     expect(homeScreenComponent.find('#home-page-content')).toBePresent();
   });
@@ -38,5 +42,10 @@ describe('HomeScreenComponent component', () => {
   test('it should have a BOTTOM button config of scrolling page down', () => {
     HomeScreenButtons.BOTTOM();
     expect(ButtonAction.scrollDown).toHaveBeenCalled();
+  });
+
+  test('it should have a LEFT button config of going to Counter Page with an initial number value of 0', () => {
+    HomeScreenButtons.LEFT();
+    expect(ButtonAction.goToPage).toHaveBeenCalledWith({ pathname: '/counter', state: { number: 0 } });
   });
 });
